@@ -1,3 +1,4 @@
+require('./src/Config/config');
 console.clear();
 
 // ---------------------------------- //
@@ -31,6 +32,6 @@ app.use('/api', require('./src/Routes/RouteEmail'));
 
 
 // Run the server
-app.listen(5000, (res) => {
-    console.log(`Servidor corriendo en el puerto 5000`);
+app.listen(process.env.PORT, (res) => {
+    console.log(`Servidor corriendo en el puerto ${process.env.PORT}`);
 });
