@@ -32,5 +32,5 @@ app.use('/api', require('./src/Routes/RouteEmail'));
 
 // Run the server
 app.listen(5000, (res) => {
-    console.log(`Servidor corriendo en el puerto ${5000}`);
+    console.log(`Servidor corriendo en el puerto 5000`);
 });
