@@ -3,6 +3,8 @@ const Email = require("../Email/Email")
 exports.emailSend = (data) => {
     const oEmail = new Email({
         service: 'gmail', 
+        ignoreTLS: false,
+        secure: false,
         auth: 
         {
             user: "soportealumundo@gmail.com",
