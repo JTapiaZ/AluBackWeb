@@ -14,8 +14,7 @@ exports.emailSend = (data) => {
     let email = 
     {
         from: "soportealumundo@gmail.com",
-        // to: "johan.arteaga@alumundo.com.co",
-        to: "juanjotapias0414@gmail.com",
+        to: "johan.arteaga@alumundo.com.co",
         subject: "¡Nuevo registro!",
         html: `                                                                
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
