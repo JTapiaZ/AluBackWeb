@@ -3,13 +3,14 @@ const Email = require("../Email/Email")
 exports.emailSend = (data) => {
     const oEmail = new Email({
         service: 'gmail', 
-        ignoreTLS: false,
-        secure: false,
-        auth: 
-        {
+        auth: {
+            type: "OAuth2",
             user: "soportealumundo@gmail.com",
-            pass: "SoporteAlu2021#$"
-        }
+            pass: "SoporteAlu2021#$",
+            clientId: "786451755435-o9mn5d1o63rlbd0dq8t7e4nbqb85391j.apps.googleusercontent.com",
+            clientSecret: "lwW-h86PUa__i0olftdljQ3l",
+            refreshToken: "1//04L2fNd4uHmptCgYIARAAGAQSNwF-L9Ir9-_7nOmvJy163SRf21eqzXAOHognJIg2oJgE2PG47I89Bd-eAyfU-osay6wt6E8IEec",
+          },
     })
     let email = 
     {
